@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">web user</string>
+    <string name= "http" >http://</string>
+    <string name="btnback">←</string>
+    <string name="btnfoward">→</string>
+    <string name="btngo">Go</string>
+    <string name="btnreload">↻</string>
+</resources>

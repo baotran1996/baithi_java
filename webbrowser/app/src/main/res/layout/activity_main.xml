@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="music.a56th2.baotran.music.MainActivity">
+
+    <EditText
+        android:id="@+id/txtinputurl"
+        android:layout_width="236dp"
+        android:layout_height="47dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:inputType="textUri"
+        android:text="@string/http"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btngo"
+        tools:layout_constraintBaseline_creator="1" />
+
+    <Button
+        android:id="@+id/btngo"
+        android:layout_width="72dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/btngo"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="16dp"
+        android:background="#00CC00"
+        tools:layout_editor_absoluteX="277dp" />
+
+    <Button
+        android:id="@+id/btnback"
+        style="@android:style/Widget.DeviceDefault.Button.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:text="@string/btnback"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        android:background="#00CC00"
+        tools:layout_constraintTop_creator="1"
+        app:layout_constraintTop_toTopOf="@+id/btnfoward" />
+
+    <Button
+        android:id="@+id/btnfoward"
+        style="@android:style/Widget.DeviceDefault.Button.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/btnfoward"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        app:layout_constraintTop_toBottomOf="@+id/txtinputurl"
+        tools:layout_constraintTop_creator="1"
+        android:background="#00CC00"
+        app:layout_constraintRight_toLeftOf="@+id/btnreload"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginEnd="35dp"
+        android:layout_marginRight="37dp" />
+
+    <Button
+        android:id="@+id/btnreload"
+        style="@android:style/Widget.DeviceDefault.Button.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/btnreload"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        app:layout_constraintBottom_toTopOf="@+id/mainview"
+        android:background="#00CC00"
+        app:layout_constraintRight_toRightOf="@+id/txtinputurl"
+        app:layout_constraintTop_toBottomOf="@+id/btngo"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <WebView
+        android:id="@+id/mainview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnback"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+</android.support.constraint.ConstraintLayout>
